@@ -15,3 +15,6 @@ __pycache__/
 .vs/
 *.iml
 *.code-workspace
+
+# chaves de API locais
+.env
