@@ -1,3 +1,8 @@
+> **Branch `artigo-ordem-de-fala`:** acrescenta a pasta [`quare-ordem/`](quare-ordem/), com a reimplementação
+> do QUARE usada no artigo *Quem fala primeiro decide?* (efeito da ordem de fala numa negociação multiagente de
+> requisitos), os resultados das 600 execuções e sínteses e as análises. O restante do repositório é o artefato
+> original, sem alterações. Veja [`quare-ordem/README.md`](quare-ordem/README.md).
+
 # OpenRE-Bench
 
 > A reproducible evaluation harness for comparing multi-agent Requirements

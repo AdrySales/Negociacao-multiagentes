@@ -1,0 +1,13 @@
+{
+ "kind": "ping",
+ "seed": 1793126117,
+ "messages": [
+  {
+   "role": "user",
+   "content": "Reply with the JSON object {\"ok\": true} and nothing else."
+  }
+ ],
+ "text": "{\"ok\": true}",
+ "model": "gpt-4o-mini-2024-07-18",
+ "system_fingerprint": "fp_d19f986533"
+}

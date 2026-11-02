@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# saída da simulação com LLM falso (regenerável com `quare-ordem simular`) e backups compactados
+runs/simulacao/
+runs/*.zip

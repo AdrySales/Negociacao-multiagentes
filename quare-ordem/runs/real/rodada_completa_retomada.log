@@ -1,0 +1,55 @@
+﻿custo por execução no piloto (AD, o caso mais longo): US$ 0.0130
+execuções restantes: 49  projeção conservadora: US$ 0.74
+já gasto: US$ 2.0985  teto: US$ 8.00
+[111/250] ATM-o00-r2 ok  rodadas=3  custo=US$ 0.0023  total=US$ 2.1008
+[124/250] Library-o03-r2 ok  rodadas=3  custo=US$ 0.0046  total=US$ 2.1054
+[204/250] AD-o03-r4 ok  rodadas=3  custo=US$ 0.0111  total=US$ 2.1165
+[205/250] AD-o04-r4 ok  rodadas=3  custo=US$ 0.0122  total=US$ 2.1288
+[206/250] AD-o05-r4 ok  rodadas=3  custo=US$ 0.0113  total=US$ 2.1400
+[207/250] AD-o06-r4 ok  rodadas=3  custo=US$ 0.0113  total=US$ 2.1513
+[208/250] AD-o07-r4 ok  rodadas=3  custo=US$ 0.0109  total=US$ 2.1622
+[209/250] AD-o08-r4 ok  rodadas=3  custo=US$ 0.0116  total=US$ 2.1739
+[210/250] AD-o09-r4 ok  rodadas=3  custo=US$ 0.0091  total=US$ 2.1830
+[211/250] ATM-o00-r4 ok  rodadas=3  custo=US$ 0.0106  total=US$ 2.1936
+[212/250] ATM-o01-r4 ok  rodadas=3  custo=US$ 0.0110  total=US$ 2.2046
+[213/250] ATM-o02-r4 ok  rodadas=3  custo=US$ 0.0116  total=US$ 2.2162
+[214/250] ATM-o03-r4 ok  rodadas=3  custo=US$ 0.0092  total=US$ 2.2255
+[215/250] ATM-o04-r4 ok  rodadas=3  custo=US$ 0.0110  total=US$ 2.2365
+[216/250] ATM-o05-r4 ok  rodadas=3  custo=US$ 0.0105  total=US$ 2.2469
+[217/250] ATM-o06-r4 ok  rodadas=3  custo=US$ 0.0094  total=US$ 2.2563
+[218/250] ATM-o07-r4 ok  rodadas=3  custo=US$ 0.0086  total=US$ 2.2650
+[219/250] ATM-o08-r4 FALHOU: TransientAPIError: Connection error.
+[220/250] ATM-o09-r4 ok  rodadas=3  custo=US$ 0.0126  total=US$ 2.2851
+[221/250] Library-o00-r4 ok  rodadas=3  custo=US$ 0.0095  total=US$ 2.2946
+[222/250] Library-o01-r4 ok  rodadas=3  custo=US$ 0.0096  total=US$ 2.3042
+[223/250] Library-o02-r4 ok  rodadas=3  custo=US$ 0.0090  total=US$ 2.3132
+[224/250] Library-o03-r4 ok  rodadas=3  custo=US$ 0.0106  total=US$ 2.3239
+[225/250] Library-o04-r4 ok  rodadas=3  custo=US$ 0.0090  total=US$ 2.3329
+[226/250] Library-o05-r4 ok  rodadas=3  custo=US$ 0.0108  total=US$ 2.3436
+[227/250] Library-o06-r4 ok  rodadas=3  custo=US$ 0.0133  total=US$ 2.3569
+[228/250] Library-o07-r4 ok  rodadas=3  custo=US$ 0.0102  total=US$ 2.3670
+[229/250] Library-o08-r4 ok  rodadas=3  custo=US$ 0.0111  total=US$ 2.3782
+[230/250] Library-o09-r4 ok  rodadas=3  custo=US$ 0.0083  total=US$ 2.3864
+[231/250] RollCall-o00-r4 ok  rodadas=3  custo=US$ 0.0091  total=US$ 2.3955
+[232/250] RollCall-o01-r4 ok  rodadas=3  custo=US$ 0.0089  total=US$ 2.4044
+[233/250] RollCall-o02-r4 ok  rodadas=3  custo=US$ 0.0096  total=US$ 2.4140
+[234/250] RollCall-o03-r4 ok  rodadas=3  custo=US$ 0.0106  total=US$ 2.4246
+[235/250] RollCall-o04-r4 ok  rodadas=3  custo=US$ 0.0091  total=US$ 2.4337
+[236/250] RollCall-o05-r4 ok  rodadas=3  custo=US$ 0.0104  total=US$ 2.4441
+[237/250] RollCall-o06-r4 ok  rodadas=3  custo=US$ 0.0099  total=US$ 2.4541
+[238/250] RollCall-o07-r4 ok  rodadas=3  custo=US$ 0.0100  total=US$ 2.4641
+[239/250] RollCall-o08-r4 ok  rodadas=3  custo=US$ 0.0118  total=US$ 2.4759
+[240/250] RollCall-o09-r4 ok  rodadas=3  custo=US$ 0.0103  total=US$ 2.4862
+[241/250] Bookkeeping-o00-r4 ok  rodadas=3  custo=US$ 0.0106  total=US$ 2.4968
+[242/250] Bookkeeping-o01-r4 ok  rodadas=3  custo=US$ 0.0103  total=US$ 2.5071
+[243/250] Bookkeeping-o02-r4 ok  rodadas=3  custo=US$ 0.0088  total=US$ 2.5160
+[244/250] Bookkeeping-o03-r4 ok  rodadas=3  custo=US$ 0.0114  total=US$ 2.5273
+[245/250] Bookkeeping-o04-r4 ok  rodadas=3  custo=US$ 0.0113  total=US$ 2.5386
+[246/250] Bookkeeping-o05-r4 ok  rodadas=3  custo=US$ 0.0106  total=US$ 2.5492
+[247/250] Bookkeeping-o06-r4 ok  rodadas=3  custo=US$ 0.0120  total=US$ 2.5612
+[248/250] Bookkeeping-o07-r4 ok  rodadas=3  custo=US$ 0.0106  total=US$ 2.5718
+[249/250] Bookkeeping-o08-r4 ok  rodadas=3  custo=US$ 0.0099  total=US$ 2.5817
+[250/250] Bookkeeping-o09-r4 ok  rodadas=3  custo=US$ 0.0084  total=US$ 2.5901
+
+concluídas agora: 48  já existentes: 201  falhas: 1
+gasto nesta execução: US$ 0.4916  gasto acumulado: US$ 2.5901 de US$ 8.00

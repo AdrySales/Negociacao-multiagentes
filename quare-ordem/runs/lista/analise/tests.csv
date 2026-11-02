@@ -1,0 +1,7 @@
+test,estimate,statistic,p
+posição na lista não afeta a sobrevivência (Wald conjunto),,99.57183361562431,1.2133730670653477e-20
+"agente não afeta a sobrevivência, dada a posição na lista (Wald conjunto)",,412.3392154347902,5.997953242653953e-88
+"lista 2ª vs 1ª (pontos percentuais, IC 95% -10.2 a -5.2)",-7.703719142522275,-5.942127761817715,2.8134599851014216e-09
+"lista 3ª vs 1ª (pontos percentuais, IC 95% -14.4 a -8.5)",-11.492372418814629,-7.616436251431745,2.607752874514628e-14
+"lista 4ª vs 1ª (pontos percentuais, IC 95% -15.6 a -9.3)",-12.4116473568955,-7.699977174293767,1.3609053844088032e-14
+"lista 5ª vs 1ª (pontos percentuais, IC 95% -19.4 a -12.7)",-16.05059425659786,-9.403295743602659,5.288019341303291e-21

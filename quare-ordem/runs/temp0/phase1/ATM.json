@@ -1,0 +1,263 @@
+{
+  "case": "ATM",
+  "model": "gpt-4o-mini-2024-07-18",
+  "temperature": 0.7,
+  "created": "2026-11-01T20:09:00.653467+00:00",
+  "requirements": {
+    "SafetyAgent": [
+      {
+        "id": "SAF-01",
+        "agent": "SafetyAgent",
+        "text": "The system shall ensure that no account can have a negative balance.",
+        "kaos_level": "tactical",
+        "rationale": "This prevents financial discrepancies and ensures safe handling of funds."
+      },
+      {
+        "id": "SAF-02",
+        "agent": "SafetyAgent",
+        "text": "The system shall automatically withdraw funds from the related saving account if the checking account balance is insufficient.",
+        "kaos_level": "tactical",
+        "rationale": "This mitigates the risk of transaction failures due to insufficient funds."
+      },
+      {
+        "id": "SAF-03",
+        "agent": "SafetyAgent",
+        "text": "The system shall inform the user and terminate the transaction if the saving account balance is insufficient for the withdrawal.",
+        "kaos_level": "operational",
+        "rationale": "This provides immediate feedback to the user, enhancing safety in transaction handling."
+      },
+      {
+        "id": "SAF-04",
+        "agent": "SafetyAgent",
+        "text": "The system shall log all transactions with date, time, type, amount, and resulting balance.",
+        "kaos_level": "operational",
+        "rationale": "This ensures traceability and accountability of all financial transactions."
+      },
+      {
+        "id": "SAF-05",
+        "agent": "SafetyAgent",
+        "text": "The system shall implement secure PIN verification for user authentication.",
+        "kaos_level": "tactical",
+        "rationale": "This is essential for protecting user accounts against unauthorized access."
+      },
+      {
+        "id": "SAF-06",
+        "agent": "SafetyAgent",
+        "text": "The system shall provide a mechanism for safe degradation by allowing limited withdrawals during system maintenance.",
+        "kaos_level": "strategic",
+        "rationale": "This ensures continued access to funds even during unexpected downtimes."
+      },
+      {
+        "id": "SAF-07",
+        "agent": "SafetyAgent",
+        "text": "The system shall provide users with a clear summary of account status after each transaction.",
+        "kaos_level": "operational",
+        "rationale": "This enhances user understanding and trust in the system's reliability."
+      }
+    ],
+    "EfficiencyAgent": [
+      {
+        "id": "EFF-01",
+        "agent": "EfficiencyAgent",
+        "text": "The ATM system shall process transactions within 3 seconds to ensure user responsiveness.",
+        "kaos_level": "operational",
+        "rationale": "Timely transaction processing enhances user satisfaction and system performance."
+      },
+      {
+        "id": "EFF-02",
+        "agent": "EfficiencyAgent",
+        "text": "The system shall maintain a transaction throughput of at least 100 transactions per minute.",
+        "kaos_level": "tactical",
+        "rationale": "High throughput is essential for efficient service delivery, especially during peak hours."
+      },
+      {
+        "id": "EFF-03",
+        "agent": "EfficiencyAgent",
+        "text": "The ATM application shall optimize data retrieval to minimize latency when accessing transaction history.",
+        "kaos_level": "tactical",
+        "rationale": "Reducing latency is critical for a seamless user experience during transaction reviews."
+      },
+      {
+        "id": "EFF-04",
+        "agent": "EfficiencyAgent",
+        "text": "The system shall ensure that no account can enter a negative balance during transactions.",
+        "kaos_level": "operational",
+        "rationale": "Preventing negative balances is vital for maintaining account integrity and user trust."
+      },
+      {
+        "id": "EFF-05",
+        "agent": "EfficiencyAgent",
+        "text": "The ATM shall automatically withdraw funds from the related saving-account without user delay.",
+        "kaos_level": "operational",
+        "rationale": "This feature promotes efficient fund management and enhances user experience during withdrawals."
+      },
+      {
+        "id": "EFF-06",
+        "agent": "EfficiencyAgent",
+        "text": "The system shall provide immediate feedback if a withdrawal request exceeds available balances.",
+        "kaos_level": "operational",
+        "rationale": "Immediate feedback is essential to inform users of transaction failures and maintain system efficiency."
+      },
+      {
+        "id": "EFF-07",
+        "agent": "EfficiencyAgent",
+        "text": "The ATM system shall implement load balancing to manage transaction requests effectively.",
+        "kaos_level": "tactical",
+        "rationale": "Effective load balancing is crucial for optimizing resource utilization and improving overall performance."
+      }
+    ],
+    "GreenAgent": [
+      {
+        "id": "GRN-01",
+        "agent": "GreenAgent",
+        "text": "The ATM system shall minimize energy consumption by optimizing transaction processing to reduce idle states.",
+        "kaos_level": "tactical",
+        "rationale": "Reducing energy consumption directly contributes to sustainability by lowering the operational carbon footprint."
+      },
+      {
+        "id": "GRN-02",
+        "agent": "GreenAgent",
+        "text": "The ATM system shall provide a carbon footprint report for each transaction executed.",
+        "kaos_level": "operational",
+        "rationale": "Tracking the carbon footprint of transactions helps the bank assess and improve its sustainability performance."
+      },
+      {
+        "id": "GRN-03",
+        "agent": "GreenAgent",
+        "text": "The ATM system shall utilize energy-efficient hardware components to operate.",
+        "kaos_level": "tactical",
+        "rationale": "Using energy-efficient hardware reduces the overall energy consumption and lifecycle resource impact."
+      },
+      {
+        "id": "GRN-04",
+        "agent": "GreenAgent",
+        "text": "The ATM system shall ensure that all recorded transactions are logged in a way that minimizes data storage requirements.",
+        "kaos_level": "operational",
+        "rationale": "Efficient data storage practices reduce resource impact associated with server maintenance and energy usage."
+      },
+      {
+        "id": "GRN-05",
+        "agent": "GreenAgent",
+        "text": "The ATM system shall provide an option for clients to receive electronic transaction records instead of paper receipts.",
+        "kaos_level": "operational",
+        "rationale": "Encouraging electronic records reduces paper waste and supports sustainability initiatives."
+      },
+      {
+        "id": "GRN-06",
+        "agent": "GreenAgent",
+        "text": "The ATM system shall automatically shut down during periods of inactivity to save energy.",
+        "kaos_level": "tactical",
+        "rationale": "Automatic shutdown during inactivity helps conserve energy, contributing to overall sustainability goals."
+      },
+      {
+        "id": "GRN-07",
+        "agent": "GreenAgent",
+        "text": "The ATM system shall assess the environmental impact of its operations annually and report findings to stakeholders.",
+        "kaos_level": "strategic",
+        "rationale": "Regular assessments of environmental impact promote transparency and continuous improvement in sustainability practices."
+      }
+    ],
+    "TrustworthinessAgent": [
+      {
+        "id": "TRU-01",
+        "agent": "TrustworthinessAgent",
+        "text": "The system shall ensure that all transactions are encrypted during transmission.",
+        "kaos_level": "tactical",
+        "rationale": "This protects sensitive data from interception and unauthorized access."
+      },
+      {
+        "id": "TRU-02",
+        "agent": "TrustworthinessAgent",
+        "text": "The system shall implement user authentication using a secure PIN code mechanism.",
+        "kaos_level": "tactical",
+        "rationale": "This ensures that only authorized users can access their accounts."
+      },
+      {
+        "id": "TRU-03",
+        "agent": "TrustworthinessAgent",
+        "text": "The system shall log all transactions along with their timestamps for audit purposes.",
+        "kaos_level": "operational",
+        "rationale": "This allows for tracking and verifying transaction integrity."
+      },
+      {
+        "id": "TRU-04",
+        "agent": "TrustworthinessAgent",
+        "text": "The system shall prevent transactions that would result in negative account balances.",
+        "kaos_level": "tactical",
+        "rationale": "This ensures compliance with account management rules and protects user funds."
+      },
+      {
+        "id": "TRU-05",
+        "agent": "TrustworthinessAgent",
+        "text": "The system shall provide a mechanism for users to review their transaction history securely.",
+        "kaos_level": "operational",
+        "rationale": "This enhances user transparency and trust in the system."
+      },
+      {
+        "id": "TRU-06",
+        "agent": "TrustworthinessAgent",
+        "text": "The system shall automatically notify users of insufficient funds before processing withdrawals.",
+        "kaos_level": "operational",
+        "rationale": "This prevents failed transactions and enhances user experience."
+      },
+      {
+        "id": "TRU-07",
+        "agent": "TrustworthinessAgent",
+        "text": "The system shall maintain data integrity by validating all account operations against business rules.",
+        "kaos_level": "tactical",
+        "rationale": "This ensures that all transactions adhere to established financial regulations."
+      }
+    ],
+    "ResponsibilityAgent": [
+      {
+        "id": "RES-01",
+        "agent": "ResponsibilityAgent",
+        "text": "The system shall ensure all transactions comply with applicable financial regulations and standards.",
+        "kaos_level": "strategic",
+        "rationale": "This ensures the application's operations are lawful and accountable to regulatory authorities."
+      },
+      {
+        "id": "RES-02",
+        "agent": "ResponsibilityAgent",
+        "text": "The application shall provide transaction logs that include date, time, type, amount, and updated balance.",
+        "kaos_level": "tactical",
+        "rationale": "This promotes transparency and accountability in financial transactions for users."
+      },
+      {
+        "id": "RES-03",
+        "agent": "ResponsibilityAgent",
+        "text": "The system shall prevent users from executing transactions that would create negative account balances.",
+        "kaos_level": "tactical",
+        "rationale": "This protects users from incurring debt and ensures financial responsibility."
+      },
+      {
+        "id": "RES-04",
+        "agent": "ResponsibilityAgent",
+        "text": "The application shall validate user identity through a secure PIN entry mechanism.",
+        "kaos_level": "tactical",
+        "rationale": "This protects user accounts from unauthorized access, ensuring fairness and security."
+      },
+      {
+        "id": "RES-05",
+        "agent": "ResponsibilityAgent",
+        "text": "The system shall automatically withdraw funds from a related savings account only when sufficient funds are available.",
+        "kaos_level": "operational",
+        "rationale": "This ensures fairness and prevents users from being misled about their financial capabilities."
+      },
+      {
+        "id": "RES-06",
+        "agent": "ResponsibilityAgent",
+        "text": "The application shall notify users immediately if a transaction cannot be completed due to insufficient funds.",
+        "kaos_level": "operational",
+        "rationale": "This ensures users are informed of their financial status, promoting transparency and accountability."
+      },
+      {
+        "id": "RES-07",
+        "agent": "ResponsibilityAgent",
+        "text": "The system shall maintain user privacy by securely encrypting all personal and financial data.",
+        "kaos_level": "strategic",
+        "rationale": "This upholds social responsibility by protecting sensitive information from unauthorized access."
+      }
+    ]
+  }
+}

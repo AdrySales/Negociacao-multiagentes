@@ -1,0 +1,34 @@
+[project]
+name = "quare-ordem"
+version = "0.1.0"
+description = "Experimento: efeito da ordem de fala dos agentes na negociação multiagente do QUARE."
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "openai>=3.40,<4",
+]
+
+[project.optional-dependencies]
+metrics = [
+  "numpy>=2.0.0",
+  "pandas>=2.2.0",
+  "scipy>=1.13.0",
+  "statsmodels>=0.14.0",
+]
+
+[project.scripts]
+quare-ordem = "quare_ordem.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quare_ordem"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

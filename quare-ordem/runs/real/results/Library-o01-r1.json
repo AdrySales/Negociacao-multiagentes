@@ -1,0 +1,616 @@
+{
+  "run_id": "Library-o01-r1",
+  "case": "Library",
+  "order_index": 1,
+  "order": [
+    "EfficiencyAgent",
+    "GreenAgent",
+    "SafetyAgent",
+    "TrustworthinessAgent",
+    "ResponsibilityAgent"
+  ],
+  "replica": 1,
+  "seed": 10101,
+  "model": "gpt-4o-mini-2024-07-18",
+  "temperature": 0.7,
+  "backend": "openai",
+  "started": "2026-11-01T21:27:43.024255+00:00",
+  "finished": "2026-11-01T21:28:36.761866+00:00",
+  "rounds_played": 3,
+  "closed_early": false,
+  "cost_usd": 0.008092,
+  "transcript": [
+    {
+      "statement": "I support the requirements aimed at enhancing performance efficiency. EFF-01 ensures fast search responses, critical for user satisfaction. EFF-02 optimizes resource utilization by allowing 10 simultaneous borrow operations, which can improve throughput. EFF-03 maintains real-time tracking of book availability, minimizing confusion. EFF-04 guarantees quick processing of returns, enhancing user experience. EFF-05 aligns with SAF-02 by ensuring timely notifications for accountability. EFF-06 allows librarians to manage books efficiently, while EFF-07 maintains system availability. However, I raise concerns about SAF-01, which may limit borrowing operations and hinder performance efficiency.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "SAF-01"
+          ],
+          "type": "logical",
+          "description": "Allowing 10 simultaneous borrow operations (EFF-02) conflicts with the limit of 5 books per member (SAF-01) as it restricts the efficiency of borrowing."
+        }
+      ],
+      "positions": [
+        {
+          "id": "SAF-01",
+          "stance": "oppose",
+          "proposal": "Consider increasing the borrowing limit to 10 books to align with EFF-02."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 1,
+      "position": 1,
+      "agent": "EfficiencyAgent"
+    },
+    {
+      "statement": "I support the requirements aimed at promoting sustainability within the library management system. GRN-01 ensures energy-efficient operations, which is crucial to minimize carbon emissions. GRN-02 provides transparency on energy usage, supporting informed decision-making. GRN-03 reduces paper waste through digital notifications, aligning with eco-friendly practices. GRN-04 assesses the carbon footprint of books, which promotes awareness of resource impacts. GRN-05 ensures responsible disposal of damaged books, while GRN-06 tracks energy savings for accountability. GRN-07 encourages e-book acquisitions to lessen physical resource consumption. However, I raise concerns about EFF-02, which encourages high borrowing limits that could increase the environmental impact of resource consumption.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "GRN-07"
+          ],
+          "type": "resource",
+          "description": "Allowing up to 10 simultaneous borrow operations (EFF-02) can lead to increased physical resource consumption, conflicting with the goal of prioritizing e-books to reduce environmental impact (GRN-07)."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "oppose",
+          "proposal": "Consider reducing the borrowing limit to 5 books to align with sustainability goals."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 1,
+      "position": 2,
+      "agent": "GreenAgent"
+    },
+    {
+      "statement": "I support all safety and reliability requirements, as they ensure that the library management system operates securely and efficiently. SAF-01 prevents over-borrowing, maintaining safety in resource management. SAF-02 ensures members are promptly informed of overdue items, minimizing risks related to resource misuse. SAF-03 provides real-time inventory management to avoid double borrowing, enhancing reliability. SAF-04 ensures data recovery in case of failures, which is critical for fault tolerance. SAF-05 allows the revocation of borrowing privileges for members with overdue books, promoting responsibility. SAF-06 secures access to the system, and SAF-07 logs transactions for accountability. However, I raise concerns about EFF-02, which may compromise safety by allowing up to 10 simultaneous borrow operations that could lead to unsafe resource management.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "SAF-01"
+          ],
+          "type": "logical",
+          "description": "Allowing 10 simultaneous borrow operations (EFF-02) contradicts the borrowing limit of 5 books per member (SAF-01), leading to potential safety risks."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "oppose",
+          "proposal": "Reduce the simultaneous borrowing limit to 5 to ensure safety and reliability."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 1,
+      "position": 3,
+      "agent": "SafetyAgent"
+    },
+    {
+      "statement": "I support the requirements aimed at ensuring security and privacy within the library management system. TRU-01 guarantees that only authenticated members can borrow or return books, ensuring data protection. TRU-02 logs all borrowing transactions for auditability, which is crucial for accountability. TRU-03 enforces data encryption for member personal information, safeguarding privacy. TRU-04 implements role-based access control, enhancing security for both members and librarians. TRU-05 provides a secure mechanism to report overdue books, while TRU-06 allows members to securely update their personal information. Finally, TRU-07 mandates strong password policies, reinforcing overall system security. However, I raise concerns about SAF-06, which may not adequately protect member data if authentication processes are weak.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "SAF-06",
+            "TRU-01"
+          ],
+          "type": "logical",
+          "description": "If user authentication processes (SAF-06) are insufficient, it contradicts the requirement for only authenticated members to access borrowing features (TRU-01), potentially compromising security."
+        }
+      ],
+      "positions": [
+        {
+          "id": "SAF-06",
+          "stance": "oppose",
+          "proposal": "Strengthen user authentication processes to align with the need for secure access (TRU-01)."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 1,
+      "position": 4,
+      "agent": "TrustworthinessAgent"
+    },
+    {
+      "statement": "I support the requirements that promote ethical and compliant practices within the library management system. RES-01 ensures compliance with data protection regulations through encryption, safeguarding member data. RES-02 promotes fairness by providing an accessible interface for all users, ensuring inclusivity. RES-03 holds the system accountable by logging user actions related to borrowing. RES-04 aligns with SAF-01, reinforcing responsible borrowing limits. RES-05 ensures timely notifications of overdue books, encouraging members to take responsibility. RES-06 allows members to voice concerns, enhancing fairness in services. RES-07 ensures transparency through annual usage reports. However, I raise concerns about EFF-02, which may encourage excessive borrowing that conflicts with responsible use of resources.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "RES-04"
+          ],
+          "type": "logical",
+          "description": "Allowing up to 10 simultaneous borrow operations (EFF-02) contradicts the maximum of 5 books per member (RES-04), potentially leading to irresponsible borrowing behavior."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "oppose",
+          "proposal": "Reduce the borrowing limit to 5 books to align with responsible borrowing practices."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 1,
+      "position": 5,
+      "agent": "ResponsibilityAgent"
+    },
+    {
+      "statement": "I appreciate the concerns raised regarding EFF-02, especially about its potential impact on safety, sustainability, and responsibility. However, I believe a balance can be achieved. I propose a synthesis: allow up to 7 simultaneous borrow operations per member. This would optimize resource utilization while still maintaining a limit that promotes responsible borrowing. Additionally, I suggest revisiting the notification process in EFF-05 to ensure it aligns with safety and responsibility without compromising accountability.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "SAF-01"
+          ],
+          "type": "logical",
+          "description": "Proposed limit of 7 simultaneous borrow operations seeks to balance performance efficiency with safety concerns from SAF-01."
+        },
+        {
+          "ids": [
+            "EFF-02",
+            "GRN-07"
+          ],
+          "type": "resource",
+          "description": "Allowing 7 simultaneous borrow operations aims to mitigate resource consumption while still encouraging e-book acquisitions."
+        },
+        {
+          "ids": [
+            "EFF-02",
+            "RES-04"
+          ],
+          "type": "logical",
+          "description": "The proposed limit of 7 simultaneous borrow operations attempts to address responsible borrowing while enhancing performance efficiency."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Increase simultaneous borrow operations limit to 7 books per member."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 2,
+      "position": 1,
+      "agent": "EfficiencyAgent"
+    },
+    {
+      "statement": "I acknowledge EfficiencyAgent's proposal to allow up to 7 simultaneous borrow operations. However, I maintain that this increase still conflicts with GRN-07, which emphasizes prioritizing e-books to reduce physical resource consumption. I propose a synthesis: allow 5 simultaneous borrow operations while introducing incentives for borrowing e-books, such as bonus borrowing limits for e-books. This will balance performance efficiency with sustainability goals, ensuring that we minimize the environmental impact while still promoting resource utilization effectively.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "GRN-07"
+          ],
+          "type": "resource",
+          "description": "Allowing 7 simultaneous borrow operations can lead to increased physical resource consumption, conflicting with the goal of prioritizing e-books to reduce environmental impact (GRN-07)."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Set the simultaneous borrowing limit to 5 books and introduce incentives for e-book borrowing."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 2,
+      "position": 2,
+      "agent": "GreenAgent"
+    },
+    {
+      "statement": "I appreciate the discussions around the simultaneous borrowing limits. While I recognize the need for efficiency, I firmly believe that safety should remain the priority. Therefore, I propose a synthesis: maintain the simultaneous borrowing limit at 5 books per member while allowing an exception for e-books, where members can borrow up to 7 simultaneously. This balances safety and encourages e-book usage, supporting both performance and sustainability goals. Additionally, I suggest enhancing the overdue notification process (SAF-02) to ensure it aligns with both EFF-05 and GRN-03, promoting responsibility without compromising safety.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "SAF-01"
+          ],
+          "type": "logical",
+          "description": "Increasing simultaneous borrowing to 7 books, even for e-books, may still pose safety risks contrary to the 5-book limit."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Set the simultaneous borrowing limit to 5 books, allowing 7 for e-books."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 2,
+      "position": 3,
+      "agent": "SafetyAgent"
+    },
+    {
+      "statement": "I appreciate the ongoing discussions regarding simultaneous borrowing limits and the proposals for balancing efficiency with safety and sustainability. However, I emphasize that security and privacy must not be compromised. I support SafetyAgent's proposal for a limit of 5 simultaneous borrow operations, ensuring that only authenticated members can access borrowing features. I propose a synthesis where we keep the borrowing limit at 5 books but incorporate stronger authentication measures (e.g., two-factor authentication) to enhance security without adding to borrowing limits. This ensures that we maintain safety while also protecting member data and access.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "SAF-01"
+          ],
+          "type": "logical",
+          "description": "Increasing borrowing limits, even for e-books, could undermine safety and security protocols, conflicting with the maximum of 5 books per member."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Maintain the simultaneous borrowing limit at 5 books per member, with stronger authentication measures."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 2,
+      "position": 4,
+      "agent": "TrustworthinessAgent"
+    },
+    {
+      "statement": "I appreciate the various proposals to balance efficiency, safety, and sustainability. However, I believe we must prioritize ethical and compliance aspects. I support the limit of 5 simultaneous borrow operations as it promotes responsible borrowing behavior, aligning with RES-04. I find SafetyAgent's proposal of allowing 7 for e-books reasonable, as it encourages e-book usage, supporting both resource efficiency and sustainability. I propose a synthesis: maintain the simultaneous borrowing limit at 5 books, with an exception allowing up to 7 for e-books, while enhancing notifications for overdue books (RES-05) to ensure accountability and responsibility among members.",
+      "conflicts_raised": [
+        {
+          "ids": [
+            "EFF-02",
+            "SAF-01"
+          ],
+          "type": "logical",
+          "description": "Allowing 7 simultaneous borrow operations for e-books may still pose ethical concerns about responsible resource management."
+        }
+      ],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Maintain a limit of 5 simultaneous borrow operations, allowing 7 for e-books."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 2,
+      "position": 5,
+      "agent": "ResponsibilityAgent"
+    },
+    {
+      "statement": "I appreciate the ongoing discussions and the emphasis on balancing performance efficiency with safety, sustainability, and responsibility. I support the idea of maintaining a limit of 5 simultaneous borrow operations for physical books. However, I propose a synthesis: allow 7 simultaneous borrow operations for e-books only, while keeping the limit at 5 for physical books. This approach optimizes resource utilization for digital resources, promoting efficiency without compromising safety and responsibility for physical borrowing. Additionally, I agree with enhancing overdue notifications for accountability.",
+      "conflicts_raised": [],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Set a limit of 5 simultaneous borrow operations for physical books and 7 for e-books."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 3,
+      "position": 1,
+      "agent": "EfficiencyAgent"
+    },
+    {
+      "statement": "I appreciate the collaborative efforts to balance efficiency with sustainability. I support the synthesis of maintaining a limit of 5 simultaneous borrow operations for physical books while allowing 7 for e-books. This approach aligns with GRN-07 by promoting e-book usage, thus reducing physical resource consumption. However, I propose enhancing the incentives for e-book borrowing further, such as providing additional borrowing credits for e-books, to encourage more sustainable practices among members. This will ensure we minimize environmental impact while optimizing resource utilization effectively.",
+      "conflicts_raised": [],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Maintain 5 simultaneous borrow operations for physical books and allow 7 for e-books, with additional incentives for e-book borrowing."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 3,
+      "position": 2,
+      "agent": "GreenAgent"
+    },
+    {
+      "statement": "I appreciate the consensus on maintaining a limit of 5 simultaneous borrow operations for physical books and allowing 7 for e-books. This approach effectively balances safety and promotes e-book usage. I support the implementation of additional incentives for e-book borrowing as proposed by GreenAgent, which enhances responsibility and aligns with safety goals. I would also like to propose that all notifications about overdue books (SAF-02) should be enhanced to ensure they remain timely and effective, maintaining accountability without compromising safety.",
+      "conflicts_raised": [],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "support",
+          "proposal": "Maintain 5 simultaneous borrow operations for physical books and allow 7 for e-books, with enhanced overdue notifications."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": true,
+      "unknown_ids": [],
+      "round": 3,
+      "position": 3,
+      "agent": "SafetyAgent"
+    },
+    {
+      "statement": "I appreciate the consensus on maintaining a limit of 5 simultaneous borrow operations for physical books and allowing 7 for e-books. This strikes a good balance between safety, efficiency, and sustainability. I fully support the proposal for enhanced incentives for e-book borrowing as it not only encourages digital usage but also aligns with secure access principles. However, I emphasize the importance of strong authentication processes. I propose that we incorporate stronger authentication measures, such as two-factor authentication, alongside the proposed borrowing limits to further enhance security and privacy for all members.",
+      "conflicts_raised": [],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "modify",
+          "proposal": "Maintain 5 simultaneous borrow operations for physical books and allow 7 for e-books, with strong authentication measures."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": false,
+      "unknown_ids": [],
+      "round": 3,
+      "position": 4,
+      "agent": "TrustworthinessAgent"
+    },
+    {
+      "statement": "I appreciate the collective agreement on maintaining a limit of 5 simultaneous borrow operations for physical books and allowing 7 for e-books. This approach promotes responsible borrowing and aligns with our ethical standards. I support the proposal for enhanced incentives for e-book borrowing, which encourages sustainable practices. Additionally, I agree that implementing stronger authentication measures is vital for protecting member data and ensuring compliance with regulations. However, I propose we also focus on enhancing notifications for overdue books to further promote accountability and responsibility among members.",
+      "conflicts_raised": [],
+      "positions": [
+        {
+          "id": "EFF-02",
+          "stance": "support",
+          "proposal": "Maintain 5 simultaneous borrow operations for physical books and allow 7 for e-books, with enhanced overdue notifications and strong authentication measures."
+        }
+      ],
+      "concessions": [],
+      "agree_to_close": true,
+      "unknown_ids": [],
+      "round": 3,
+      "position": 5,
+      "agent": "ResponsibilityAgent"
+    }
+  ],
+  "synthesis": {
+    "requirements": [
+      {
+        "id": "F-01",
+        "text": "The system shall maintain a maximum of 5 simultaneous borrow operations for physical books and allow 7 for e-books to promote resource efficiency and responsible borrowing.",
+        "quality_axes": [
+          "Safety|Efficiency|Sustainability|Responsibility"
+        ],
+        "derived_from": [
+          "SAF-01",
+          "EFF-02",
+          "GRN-07",
+          "RES-04"
+        ],
+        "kaos_level": "tactical",
+        "parent": null
+      },
+      {
+        "id": "F-02",
+        "text": "The system shall automatically track and notify members of overdue books within 24 hours of the due date to ensure accountability.",
+        "quality_axes": [
+          "Safety|Trustworthiness|Responsibility"
+        ],
+        "derived_from": [
+          "SAF-02",
+          "EFF-05"
+        ],
+        "kaos_level": "tactical",
+        "parent": null
+      },
+      {
+        "id": "F-03",
+        "text": "The system shall provide a backup mechanism to recover all transaction data in case of a failure.",
+        "quality_axes": [
+          "Safety|Trustworthiness"
+        ],
+        "derived_from": [
+          "SAF-04"
+        ],
+        "kaos_level": "strategic",
+        "parent": null
+      },
+      {
+        "id": "F-04",
+        "text": "The system shall log all transactions, including borrow and return actions, for audit purposes.",
+        "quality_axes": [
+          "Safety|Trustworthiness"
+        ],
+        "derived_from": [
+          "SAF-07",
+          "TRU-02"
+        ],
+        "kaos_level": "operational",
+        "parent": null
+      },
+      {
+        "id": "F-05",
+        "text": "The system shall implement strong authentication measures to ensure only registered members can access borrowing features.",
+        "quality_axes": [
+          "Safety|Trustworthiness"
+        ],
+        "derived_from": [
+          "SAF-06",
+          "TRU-01",
+          "TRU-07"
+        ],
+        "kaos_level": "tactical",
+        "parent": null
+      },
+      {
+        "id": "F-06",
+        "text": "The system shall ensure compliance with data protection regulations by implementing encryption for all member data.",
+        "quality_axes": [
+          "Safety|Trustworthiness|Responsibility"
+        ],
+        "derived_from": [
+          "RES-01",
+          "TRU-03"
+        ],
+        "kaos_level": "tactical",
+        "parent": null
+      },
+      {
+        "id": "F-07",
+        "text": "The system shall provide an accessible interface for all users, including those with disabilities, to promote fairness and inclusivity.",
+        "quality_axes": [
+          "Responsibility"
+        ],
+        "derived_from": [
+          "RES-02"
+        ],
+        "kaos_level": "tactical",
+        "parent": null
+      },
+      {
+        "id": "F-08",
+        "text": "The system shall provide incentives for borrowing e-books to promote sustainable practices.",
+        "quality_axes": [
+          "Sustainability|Responsibility"
+        ],
+        "derived_from": [
+          "GRN-07"
+        ],
+        "kaos_level": "tactical",
+        "parent": null
+      }
+    ],
+    "conflict_resolutions": [
+      {
+        "ids": [
+          "EFF-02",
+          "SAF-01"
+        ],
+        "outcome": "merged",
+        "favored_agent": null,
+        "rationale": "The final requirement combines both agents' needs for safety and efficiency."
+      },
+      {
+        "ids": [
+          "EFF-02",
+          "GRN-07"
+        ],
+        "outcome": "favored",
+        "favored_agent": "GreenAgent",
+        "rationale": "Sustainability concerns about physical resource consumption prevailed."
+      },
+      {
+        "ids": [
+          "EFF-02",
+          "RES-04"
+        ],
+        "outcome": "merged",
+        "favored_agent": null,
+        "rationale": "The final requirement integrates responsible borrowing with efficiency."
+      },
+      {
+        "ids": [
+          "SAF-06",
+          "TRU-01"
+        ],
+        "outcome": "merged",
+        "favored_agent": null,
+        "rationale": "Both requirements emphasize secure access for members."
+      }
+    ],
+    "dropped": [
+      {
+        "id": "EFF-01",
+        "reason": "Not explicitly represented in the final requirements."
+      },
+      {
+        "id": "EFF-03",
+        "reason": "Covered under the operational requirements for logging transactions."
+      },
+      {
+        "id": "EFF-04",
+        "reason": "Not specifically addressed in the final requirements."
+      },
+      {
+        "id": "EFF-06",
+        "reason": "Redundant with the final requirements on transaction logging."
+      },
+      {
+        "id": "GRN-01",
+        "reason": "Not explicitly represented in the final requirements."
+      },
+      {
+        "id": "GRN-02",
+        "reason": "Not addressed in the final requirements."
+      },
+      {
+        "id": "GRN-03",
+        "reason": "Addressed through the notification process in F-02."
+      },
+      {
+        "id": "GRN-04",
+        "reason": "Not included in the final requirements."
+      },
+      {
+        "id": "GRN-05",
+        "reason": "Not explicitly represented in the final requirements."
+      },
+      {
+        "id": "GRN-06",
+        "reason": "Not represented in the final requirements."
+      },
+      {
+        "id": "TRU-04",
+        "reason": "Implicitly included in user authentication measures."
+      },
+      {
+        "id": "TRU-05",
+        "reason": "Addressed through the notification process in F-02."
+      },
+      {
+        "id": "TRU-06",
+        "reason": "Covered under strong authentication measures in F-05."
+      },
+      {
+        "id": "RES-03",
+        "reason": "Redundant with logging requirements in F-04."
+      },
+      {
+        "id": "RES-05",
+        "reason": "Merged into the overdue notification in F-02."
+      },
+      {
+        "id": "RES-06",
+        "reason": "Not explicitly represented in the final requirements."
+      },
+      {
+        "id": "RES-07",
+        "reason": "Not included in the final requirements."
+      },
+      {
+        "id": "SAF-03",
+        "reason": ""
+      },
+      {
+        "id": "SAF-05",
+        "reason": ""
+      },
+      {
+        "id": "EFF-07",
+        "reason": ""
+      }
+    ],
+    "unaccounted": [],
+    "unknown_ids": [],
+    "attempts": 1
+  }
+}
